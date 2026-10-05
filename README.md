@@ -1,1 +1,83 @@
+<p align="center"><img src="logo.png" width="96" height="96" alt="teas.co.uk"></p>
+
 # teas.co.uk MCP server
+
+teas.co.uk is a UK online tea shop. This repository is the public listing for its hosted
+[Model Context Protocol](https://modelcontextprotocol.io) server, which lets AI assistants search the live catalogue of
+tea, coffee and hot chocolate, compare products, find recipes, build a basket and hand over to a secure checkout on
+teas.co.uk.
+
+| | |
+|---|---|
+| Endpoint | `https://teas.co.uk/mcp` (Streamable HTTP) |
+| Official MCP Registry | `uk.co.teas/shop` |
+| Website and setup guide | https://teas.co.uk/ai/ |
+| Sign in | Not needed to shop. OAuth 2.1 (`https://teas.co.uk/oauth`) only for account tools |
+
+[![teas.co.uk MCP connector](https://glama.ai/mcp/connectors/uk.co.teas/shop/badges/score.svg)](https://glama.ai/mcp/connectors/uk.co.teas/shop)
+
+## What it does
+
+- **Search** more than 600 teas, coffees and hot chocolates in plain words, with filters for type, caffeine, milk,
+  time of day, strength, pack size, price per cup and organic, Fairtrade or vegan labels. Live prices in pounds
+  including VAT, and live stock.
+- **Product details** with tasting notes, a brewing guide with a timer, caffeine and allergy notes, and recipes.
+- **Compare** two to four products side by side.
+- **Recipes** from the teas.co.uk library (iced teas, lattes, chai, baking with tea; no alcohol).
+- **Basket and checkout**: build a basket and get a secure link to pay on teas.co.uk. Payment never happens in the
+  chat and the server cannot place an order.
+- **Account** (after the customer links their teas.co.uk account): recent orders and courier tracking, buy again,
+  pause, resume or cancel repeat deliveries, reward points and return requests.
+
+Clients that support MCP Apps (for example ChatGPT, Claude and Mistral Vibe) show interactive product, basket and
+order cards.
+
+## Add it to your assistant
+
+| Assistant | How |
+|---|---|
+| Claude | Customize, Connectors, Add custom connector: name `teas.co.uk`, URL `https://teas.co.uk/mcp` |
+| Grok | grok.com, Connectors, New Connector, Custom: name `teas.co.uk`, URL `https://teas.co.uk/mcp` |
+| Mistral Vibe | Context, Connectors, Add connector, Add custom connector: `https://teas.co.uk/mcp` |
+| Perplexity (Pro, Max, Enterprise) | Connectors, custom connector: `https://teas.co.uk/mcp` |
+| Claude Code | `claude mcp add --transport http teas.co.uk https://teas.co.uk/mcp` |
+| Gemini CLI | `gemini extensions install https://github.com/leestucker/teas-co-uk-mcp` |
+| Cursor | Add to `~/.cursor/mcp.json`: `{"mcpServers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
+| VS Code | Add to `.vscode/mcp.json`: `{"servers": {"teas.co.uk": {"type": "http", "url": "https://teas.co.uk/mcp"}}}` |
+| Cline | See [llms-install.md](llms-install.md) |
+| Any MCP client | Streamable HTTP at `https://teas.co.uk/mcp` |
+
+## Tools
+
+| Tool | What it does | Sign in |
+|---|---|---|
+| `find_products` | Search the live catalogue | No |
+| `get_product` | Full details of one product | No |
+| `compare_products` | Two to four products side by side | No |
+| `find_recipes` | Recipes from the teas.co.uk library | No |
+| `delivery_and_returns` | Delivery prices, countries and the returns policy | No |
+| `add_to_basket` | Add products to a basket kept on teas.co.uk | No |
+| `view_basket` | Show the basket with a delivery estimate | No |
+| `update_basket` | Change a quantity or remove a product | No |
+| `checkout_link` | Secure link to pay for the basket on teas.co.uk | No |
+| `checkout_session` | Checkout for specific products straight away | No |
+| `get_profile` | Which teas.co.uk account is linked | Yes |
+| `my_orders` | Recent orders | Yes |
+| `track_order` | Status and courier tracking for one order | Yes |
+| `reorder` | Buy an earlier order again | Yes |
+| `my_subscriptions` | Repeat deliveries | Yes |
+| `change_subscription` | Pause, resume or cancel a repeat delivery | Yes |
+| `rewards_balance` | Reward points | Yes |
+| `start_return` | Send a return request for review | Yes |
+
+## Privacy and terms
+
+- Privacy policy: https://teas.co.uk/privacy-policy/
+- Terms: https://teas.co.uk/terms-and-conditions/
+- Contact: https://teas.co.uk/contact-us/ or hello@teas.co.uk
+
+## About this repository
+
+This repository describes the hosted service and holds its listing files (`server.json`, `gemini-extension.json`,
+`llms-install.md` and the logo). The server is run by teas.co.uk at `https://teas.co.uk/mcp`; its source code is not
+published here.

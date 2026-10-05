@@ -1,0 +1,23 @@
+{
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+    "name": "uk.co.teas/shop",
+    "title": "teas.co.uk",
+    "description": "Find, compare and buy tea, coffee and hot chocolate from teas.co.uk, a UK online tea shop.",
+    "version": "1.0.2",
+    "websiteUrl": "https://teas.co.uk/ai/",
+    "icons": [
+        {
+            "src": "https://teas.co.uk/ai/logo.png",
+            "mimeType": "image/png",
+            "sizes": [
+                "512x512"
+            ]
+        }
+    ],
+    "remotes": [
+        {
+            "type": "streamable-http",
+            "url": "https://teas.co.uk/mcp"
+        }
+    ]
+}
