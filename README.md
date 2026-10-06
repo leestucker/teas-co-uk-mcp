@@ -41,9 +41,14 @@ order cards.
 | Mistral Vibe | Context, Connectors, Add connector, Add custom connector: `https://teas.co.uk/mcp` |
 | Perplexity (Pro, Max, Enterprise) | Connectors, custom connector: `https://teas.co.uk/mcp` |
 | Claude Code | `claude mcp add --transport http teas.co.uk https://teas.co.uk/mcp` |
-| Gemini CLI | `gemini extensions install https://github.com/leestucker/teas-co-uk-mcp` |
+| Gemini app (US) | gemini.google.com, Settings, Connected Apps, under Custom apps choose Add a custom app: `https://teas.co.uk/mcp` (US, 18 or over, personal Google Account). Works in Gemini Spark on the web and phone |
+| Gemini Enterprise (Business edition) | A team administrator: Settings and help, the team, Manage team, Connected apps, Add MCP Server: `https://teas.co.uk/mcp`, no authentication |
+| Antigravity (replaced Gemini CLI on 18 June 2026) | `agy plugin install https://github.com/leestucker/teas-co-uk-mcp` (this repo has `plugin.json`, `mcp_config.json` and a skill), or add `{"mcpServers": {"teas-co-uk": {"serverUrl": "https://teas.co.uk/mcp"}}}` to your MCP config |
+| Gemini CLI (accounts it still serves) | `gemini extensions install https://github.com/leestucker/teas-co-uk-mcp` |
+| Microsoft Copilot Studio | Agent, Tools, Add a tool, New tool, Model Context Protocol: name `teas.co.uk`, URL `https://teas.co.uk/mcp`, authentication None (OAuth 2.0 with Dynamic discovery to link a customer account). Or import [copilot-studio/teas-co-uk-mcp.yaml](copilot-studio/teas-co-uk-mcp.yaml) as a custom connector in Power Apps |
+| Microsoft 365 Copilot | An administrator adds `https://teas.co.uk/mcp` as a bring your own MCP server in the Microsoft 365 admin center, then it is available in Copilot Studio agents |
 | Cursor | Add to `~/.cursor/mcp.json`: `{"mcpServers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
-| VS Code | Add to `.vscode/mcp.json`: `{"servers": {"teas.co.uk": {"type": "http", "url": "https://teas.co.uk/mcp"}}}` |
+| VS Code and GitHub Copilot | Add to `.vscode/mcp.json`: `{"servers": {"teas.co.uk": {"type": "http", "url": "https://teas.co.uk/mcp"}}}` |
 | Cline | See [llms-install.md](llms-install.md) |
 | Any MCP client | Streamable HTTP at `https://teas.co.uk/mcp` |
 
@@ -78,6 +83,8 @@ order cards.
 
 ## About this repository
 
-This repository describes the hosted service and holds its listing files (`server.json`, `gemini-extension.json`,
-`llms-install.md` and the logo). The server is run by teas.co.uk at `https://teas.co.uk/mcp`; its source code is not
-published here.
+This repository describes the hosted service and holds its listing files: `server.json` (official MCP Registry),
+`plugin.json` and `mcp_config.json` (Antigravity plugin), `gemini-extension.json` (Gemini CLI),
+`skills/teas-co-uk/SKILL.md` (an Agent Skill for any assistant that reads skills),
+`copilot-studio/teas-co-uk-mcp.yaml` (Copilot Studio and Power Apps custom connector), `llms-install.md` and the logo.
+The server is run by teas.co.uk at `https://teas.co.uk/mcp`; its source code is not published here.
