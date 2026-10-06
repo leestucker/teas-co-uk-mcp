@@ -1,5 +1,6 @@
 {
   "$schema": "https://antigravity.google/schemas/v1/plugin.json",
   "name": "teas-co-uk",
+  "version": "1.0.0",
   "description": "Shop teas.co.uk, a UK online tea shop: search, compare and buy tea, coffee and hot chocolate. The person always pays on teas.co.uk."
 }

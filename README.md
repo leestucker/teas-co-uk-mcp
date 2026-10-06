@@ -41,6 +41,8 @@ order cards.
 | Mistral Vibe | Context, Connectors, Add connector, Add custom connector: `https://teas.co.uk/mcp` |
 | Perplexity (Pro, Max, Enterprise) | Connectors, custom connector: `https://teas.co.uk/mcp` |
 | Claude Code | `claude mcp add --transport http teas.co.uk https://teas.co.uk/mcp` |
+| Claude Code plugin | `/plugin marketplace add leestucker/teas-co-uk-mcp`, then `/plugin install teas-co-uk@teas-co-uk` (the MCP server plus the teas.co.uk skill) |
+| ChatGPT | The app is in OpenAI's review. Until it is listed, with developer mode on: Settings, Apps, Create app: name `teas.co.uk`, MCP server URL `https://teas.co.uk/mcp`, no authentication |
 | Gemini app (US) | gemini.google.com, Settings, Connected Apps, under Custom apps choose Add a custom app: `https://teas.co.uk/mcp` (US, 18 or over, personal Google Account). Works in Gemini Spark on the web and phone |
 | Gemini Enterprise (Business edition) | A team administrator: Settings and help, the team, Manage team, Connected apps, Add MCP Server: `https://teas.co.uk/mcp`, no authentication |
 | Antigravity (replaced Gemini CLI on 18 June 2026) | `agy plugin install https://github.com/leestucker/teas-co-uk-mcp` (this repo has `plugin.json`, `mcp_config.json` and a skill), or add `{"mcpServers": {"teas-co-uk": {"serverUrl": "https://teas.co.uk/mcp"}}}` to your MCP config |
@@ -49,6 +51,13 @@ order cards.
 | Microsoft 365 Copilot | An administrator adds `https://teas.co.uk/mcp` as a bring your own MCP server in the Microsoft 365 admin center, then it is available in Copilot Studio agents |
 | Cursor | Add to `~/.cursor/mcp.json`: `{"mcpServers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
 | VS Code and GitHub Copilot | Add to `.vscode/mcp.json`: `{"servers": {"teas.co.uk": {"type": "http", "url": "https://teas.co.uk/mcp"}}}` |
+| Windsurf | Cascade, Manage MCPs, Add Server, or add to `~/.codeium/windsurf/mcp_config.json`: `{"mcpServers": {"teas.co.uk": {"serverUrl": "https://teas.co.uk/mcp"}}}` |
+| Zed | Add to settings.json: `{"context_servers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
+| JetBrains AI Assistant (2026.1 or later) | Settings, Tools, AI Assistant, Model Context Protocol, Add: `{"mcpServers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
+| Goose | Add Extension, Remote Extension (Streamable HTTP): name `teas.co.uk`, URL `https://teas.co.uk/mcp` (in `config.yaml`: `type: streamable_http`, `uri: https://teas.co.uk/mcp`) |
+| Continue | In `~/.continue/config.yaml` under `mcpServers`: `- name: teas.co.uk`, `type: streamable-http`, `url: https://teas.co.uk/mcp` |
+| LM Studio (0.3.17 or later) | Add to `mcp.json`: `{"mcpServers": {"teas.co.uk": {"url": "https://teas.co.uk/mcp"}}}` |
+| Raycast | Install MCP Server: name `teas.co.uk`, transport HTTP, URL `https://teas.co.uk/mcp` |
 | Cline | See [llms-install.md](llms-install.md) |
 | Any MCP client | Streamable HTTP at `https://teas.co.uk/mcp` |
 | NLWeb clients | `https://teas.co.uk/ask?query=...` (Microsoft's NLWeb protocol: schema.org results, streamed or `streaming=false` JSON; read only) |
