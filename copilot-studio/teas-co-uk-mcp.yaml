@@ -1,0 +1,25 @@
+swagger: '2.0'
+info:
+  title: teas.co.uk
+  description: >-
+    teas.co.uk MCP server: search, compare and buy tea, coffee and hot chocolate from a UK online tea shop. The person
+    always pays on teas.co.uk. Import this file as a custom connector in Power Apps to use the server in Copilot Studio.
+  version: 1.0.0
+  contact:
+    name: teas.co.uk
+    url: https://teas.co.uk/ai/
+    email: hello@teas.co.uk
+host: teas.co.uk
+basePath: /
+schemes:
+  - https
+paths:
+  /mcp:
+    post:
+      summary: teas.co.uk shop
+      description: Search the live teas.co.uk catalogue, compare products, find recipes, build a basket and get a checkout link.
+      x-ms-agentic-protocol: mcp-streamable-1.0
+      operationId: InvokeMCP
+      responses:
+        '200':
+          description: Success
