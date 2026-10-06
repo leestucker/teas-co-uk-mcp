@@ -10,7 +10,7 @@ teas.co.uk.
 | | |
 |---|---|
 | Endpoint | `https://teas.co.uk/mcp` (Streamable HTTP) |
-| Official MCP Registry | `uk.co.teas/shop` |
+| Official MCP Registry | [teas.co.uk](https://registry.modelcontextprotocol.io/v0.1/servers/uk.co.teas%2Fshop/versions/latest) |
 | Website and setup guide | https://teas.co.uk/ai/ |
 | Sign in | Not needed to shop. OAuth 2.1 (`https://teas.co.uk/oauth`) only for account tools |
 
@@ -51,6 +51,7 @@ order cards.
 | VS Code and GitHub Copilot | Add to `.vscode/mcp.json`: `{"servers": {"teas.co.uk": {"type": "http", "url": "https://teas.co.uk/mcp"}}}` |
 | Cline | See [llms-install.md](llms-install.md) |
 | Any MCP client | Streamable HTTP at `https://teas.co.uk/mcp` |
+| NLWeb clients | `https://teas.co.uk/ask?query=...` (Microsoft's NLWeb protocol: schema.org results, streamed or `streaming=false` JSON; read only) |
 
 ## Tools
 
