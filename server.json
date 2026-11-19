@@ -2,9 +2,13 @@
     "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
     "name": "uk.co.teas/shop",
     "title": "teas.co.uk",
-    "description": "Find, compare and buy tea, coffee and hot chocolate from teas.co.uk, a UK online tea shop.",
-    "version": "1.0.2",
+    "description": "Find, compare and buy tea from teas.co.uk, a UK online tea shop. No sign-in needed to shop.",
+    "version": "1.0.3",
     "websiteUrl": "https://teas.co.uk/ai/",
+    "repository": {
+        "url": "https://github.com/leestucker/teas-co-uk-mcp",
+        "source": "github"
+    },
     "icons": [
         {
             "src": "https://teas.co.uk/ai/logo.png",

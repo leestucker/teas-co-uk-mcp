@@ -4,7 +4,7 @@
 
 teas.co.uk is a UK online tea shop. This repository is the public listing for its hosted
 [Model Context Protocol](https://modelcontextprotocol.io) server, which lets AI assistants search the live catalogue of
-tea, coffee and hot chocolate, compare products, find recipes, build a basket and hand over to a secure checkout on
+tea and hot chocolate, compare products, find recipes, build a basket and hand over to a secure checkout on
 teas.co.uk.
 
 | | |
@@ -18,7 +18,7 @@ teas.co.uk.
 
 ## What it does
 
-- **Search** more than 600 teas, coffees and hot chocolates in plain words, with filters for type, caffeine, milk,
+- **Search** about 400 teas, herbal and fruit infusions and hot chocolates in plain words, with filters for type, caffeine, milk,
   time of day, strength, pack size, price per cup and organic, Fairtrade or vegan labels. Live prices in pounds
   including VAT, and live stock.
 - **Product details** with tasting notes, a brewing guide with a timer, caffeine and allergy notes, and recipes.

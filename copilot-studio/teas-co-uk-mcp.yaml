@@ -2,7 +2,7 @@ swagger: '2.0'
 info:
   title: teas.co.uk
   description: >-
-    teas.co.uk MCP server: search, compare and buy tea, coffee and hot chocolate from a UK online tea shop. The person
+    teas.co.uk MCP server: search, compare and buy tea from a UK online tea shop. The person
     always pays on teas.co.uk. Import this file as a custom connector in Power Apps to use the server in Copilot Studio.
   version: 1.0.0
   contact:

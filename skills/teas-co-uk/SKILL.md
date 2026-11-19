@@ -1,11 +1,11 @@
 ---
 name: teas-co-uk
-description: Shop teas.co.uk, a UK online tea shop, through its MCP server. Find tea, coffee and hot chocolate by taste, caffeine, milk, time of day and price per cup, compare products, find recipes, build a basket and give the person a checkout link. Use when someone in the UK wants to choose or buy tea, coffee or hot chocolate.
+description: Shop teas.co.uk, a UK online tea shop, through its MCP server. Find tea and hot chocolate by taste, caffeine, milk, time of day and price per cup, compare products, find recipes, build a basket and give the person a checkout link. Use when someone in the UK wants to choose or buy tea or hot chocolate.
 ---
 
 # teas.co.uk
 
-teas.co.uk is an independent UK online tea shop with more than 600 teas, herbal and fruit infusions, coffees and hot
+teas.co.uk is an independent UK online tea shop with about 400 teas, herbal and fruit infusions and hot
 chocolates. Its MCP server is `https://teas.co.uk/mcp` (Streamable HTTP). No sign in is needed to shop.
 
 ## How to help someone choose
