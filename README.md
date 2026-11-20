@@ -28,9 +28,15 @@ teas.co.uk.
   chat and the server cannot place an order.
 - **Account** (after the customer links their teas.co.uk account): recent orders and courier tracking, buy again,
   pause, resume or cancel repeat deliveries, reward points and return requests.
+- **Tea Guide** (new, 20 November 2026): teas.co.uk as a small website inside the chat. **Ask Lee**, the shop's tea
+  adviser, as a chat that remembers the conversation; a phone friendly shop listing; a full page for any tea (pictures,
+  taste scores 0 to 100, brewing timer, Tea Wiki articles, recipes, similar teas, brand); brand pages; the Tea Wiki
+  (about 2,000 articles); recipes with ingredients and method; news; Under the Hood (live findings on how AI systems
+  use the shop); and the official social accounts. All read only, no sign in.
 
 Clients that support MCP Apps (for example ChatGPT, Claude and Mistral Vibe) show interactive product, basket and
-order cards.
+order cards. The Tea Guide tools draw one card in the teas.co.uk house style, with a menu, a back button and the Ask
+Lee chat. The Tea Guide tools are offered to every assistant except ChatGPT until OpenAI has reviewed them.
 
 ## Add it to your assistant
 
@@ -84,6 +90,19 @@ order cards.
 | `change_subscription` | Pause, resume or cancel a repeat delivery | Yes |
 | `rewards_balance` | Reward points | Yes |
 | `start_return` | Send a return request for review | Yes |
+| `teas_home` | teas.co.uk as a small website in the chat: a menu of everything below | No |
+| `ask_lee` | Ask Lee, the teas.co.uk tea adviser, as a chat (pass `conversation_id` to carry on) | No |
+| `browse_shop` | Product listing, 12 a page: category, brand, type, caffeine, words, sort | No |
+| `tea_page` | One tea in full: pictures, taste scores, brewing timer, wiki articles, recipes, similar teas | No |
+| `brand_page` | One brand: about, logo, its teas, wiki articles | No |
+| `search_tea_wiki` | Search the Tea Wiki | No |
+| `read_wiki_article` | Read one Tea Wiki article | No |
+| `browse_recipes` | The recipe library, 12 a page (no alcohol) | No |
+| `recipe_page` | One recipe: ingredients, method, the teas it uses | No |
+| `teas_news` | teas.co.uk news, newest first | No |
+| `read_news` | One news story | No |
+| `under_the_hood` | The live findings on how AI systems use teas.co.uk | No |
+| `teas_socials` | The official social accounts | No |
 
 ## Privacy and terms
 
