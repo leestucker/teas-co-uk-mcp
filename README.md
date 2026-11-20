@@ -32,7 +32,7 @@ teas.co.uk.
 - **Tea Guide** (new, 20 November 2026): teas.co.uk as a small website inside the chat. **Ask Lee**, the shop's tea
   adviser, as a chat that remembers the conversation; a phone friendly shop listing; a full page for any tea (pictures,
   taste scores 0 to 100, brewing timer, Tea Wiki articles, recipes, similar teas, brand); brand pages; the Tea Wiki
-  (about 2,000 articles); recipes with ingredients and method; news; Under the Hood (live findings on how AI systems
+  (about 1,500 articles); recipes with ingredients and method; news; Under the Hood (live findings on how AI systems
   use the shop); and the official social accounts. All read only, no sign in.
 - **Ask Lee in 10 languages** (20 November 2026): questions in French, German, Spanish, Dutch, Italian, Polish,
   Portuguese, Turkish, Japanese or Traditional Chinese are understood and answered in the same language. Ask Lee keeps
