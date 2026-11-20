@@ -34,8 +34,8 @@ teas.co.uk.
   (about 2,000 articles); recipes with ingredients and method; news; Under the Hood (live findings on how AI systems
   use the shop); and the official social accounts. All read only, no sign in.
 
-Clients that support MCP Apps (for example ChatGPT, Claude and Mistral Vibe) show interactive product, basket and
-order cards. The Tea Guide tools draw one card in the teas.co.uk house style, with a menu, a back button and the Ask
+Clients that support MCP Apps (for example ChatGPT, Claude and Mistral Vibe) show interactive cards: a small teas.co.uk
+website in the house style, with a menu, a back button, the Ask Lee chat, the basket and checkout. The Tea Guide tools draw one card in the teas.co.uk house style, with a menu, a back button and the Ask
 Lee chat. The Tea Guide tools are offered to every assistant except ChatGPT until OpenAI has reviewed them.
 
 ## Add it to your assistant
@@ -70,39 +70,16 @@ Lee chat. The Tea Guide tools are offered to every assistant except ChatGPT unti
 
 ## Tools
 
+Four tools, since 20 November 2026 (every assistant except ChatGPT, which keeps its reviewed list until OpenAI approves the update):
+
 | Tool | What it does | Sign in |
 |---|---|---|
-| `find_products` | Search the live catalogue | No |
-| `get_product` | Full details of one product | No |
-| `compare_products` | Two to four products side by side | No |
-| `find_recipes` | Recipes from the teas.co.uk library | No |
-| `delivery_and_returns` | Delivery prices, countries and the returns policy | No |
-| `add_to_basket` | Add products to a basket kept on teas.co.uk | No |
-| `view_basket` | Show the basket with a delivery estimate | No |
-| `update_basket` | Change a quantity or remove a product | No |
-| `checkout_link` | Secure link to pay for the basket on teas.co.uk | No |
-| `checkout_session` | Checkout for specific products straight away | No |
-| `get_profile` | Which teas.co.uk account is linked | Yes |
-| `my_orders` | Recent orders | Yes |
-| `track_order` | Status and courier tracking for one order | Yes |
-| `reorder` | Buy an earlier order again | Yes |
-| `my_subscriptions` | Repeat deliveries | Yes |
-| `change_subscription` | Pause, resume or cancel a repeat delivery | Yes |
-| `rewards_balance` | Reward points | Yes |
-| `start_return` | Send a return request for review | Yes |
-| `teas_home` | teas.co.uk as a small website in the chat: a menu of everything below | No |
-| `ask_lee` | Ask Lee, the teas.co.uk tea adviser, as a chat (pass `conversation_id` to carry on) | No |
-| `browse_shop` | Product listing, 12 a page: category, brand, type, caffeine, words, sort | No |
-| `tea_page` | One tea in full: pictures, taste scores, brewing timer, wiki articles, recipes, similar teas | No |
-| `brand_page` | One brand: about, logo, its teas, wiki articles | No |
-| `search_tea_wiki` | Search the Tea Wiki | No |
-| `read_wiki_article` | Read one Tea Wiki article | No |
-| `browse_recipes` | The recipe library, 12 a page (no alcohol) | No |
-| `recipe_page` | One recipe: ingredients, method, the teas it uses | No |
-| `teas_news` | teas.co.uk news, newest first | No |
-| `read_news` | One news story | No |
-| `under_the_hood` | The live findings on how AI systems use teas.co.uk | No |
-| `teas_socials` | The official social accounts | No |
+| `ask_lee` | Ask Lee, the teas.co.uk tea adviser, as a chat that remembers the conversation | No |
+| `teas` | The shop as a small website: pick a page (home, shop with search, category, brand, offers and sort, one tea, compare, Tea Wiki, recipes, news, Under the Hood, socials, delivery, join, report a problem) | No |
+| `basket` | Add, view, change, get the secure checkout link, or a repeat delivery link | No |
+| `my_account` | Profile, orders, tracking, invoices, reward points, repeat deliveries, returns; buy again, change a repeat delivery or start a return when the customer asks | Yes |
+
+The older tool names (`find_products`, `get_product`, `add_to_basket` and the rest) still answer for clients that saved them.
 
 ## Privacy and terms
 
