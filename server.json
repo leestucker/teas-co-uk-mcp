@@ -3,7 +3,7 @@
   "name": "uk.co.teas/shop",
   "title": "teas.co.uk",
   "description": "teas.co.uk, a UK tea shop, in four tools: Ask Lee, the shop as a mini site, basket, account.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "websiteUrl": "https://teas.co.uk/ai/",
   "repository": {
     "url": "https://github.com/leestucker/teas-co-uk-mcp",
@@ -22,6 +22,10 @@
     {
       "type": "streamable-http",
       "url": "https://teas.co.uk/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://teas.co.uk/wp-json/teas/v1/shop-mcp"
     }
   ]
 }

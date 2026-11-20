@@ -10,6 +10,7 @@ teas.co.uk.
 | | |
 |---|---|
 | Endpoint | `https://teas.co.uk/mcp` (Streamable HTTP) |
+| Backup endpoint | `https://teas.co.uk/wp-json/teas/v1/shop-mcp` (the same server and tools; use it if `/mcp` is ever blocked) |
 | Official MCP Registry | [teas.co.uk](https://registry.modelcontextprotocol.io/v0.1/servers/uk.co.teas%2Fshop/versions/latest) |
 | Website and setup guide | https://teas.co.uk/ai/ |
 | Sign in | Not needed to shop. OAuth 2.1 (`https://teas.co.uk/oauth`) only for account tools |
@@ -33,6 +34,11 @@ teas.co.uk.
   taste scores 0 to 100, brewing timer, Tea Wiki articles, recipes, similar teas, brand); brand pages; the Tea Wiki
   (about 2,000 articles); recipes with ingredients and method; news; Under the Hood (live findings on how AI systems
   use the shop); and the official social accounts. All read only, no sign in.
+- **Ask Lee in 10 languages** (20 November 2026): questions in French, German, Spanish, Dutch, Italian, Polish,
+  Portuguese, Turkish, Japanese or Traditional Chinese are understood and answered in the same language. Ask Lee keeps
+  to a budget with delivery included, says plainly when an ingredient cannot be ruled out, and gives a price per cup for
+  loose leaf tea as well as tea bags.
+- **Safer baskets** (20 November 2026): a repeated basket request is not added twice, and the last change can be undone.
 
 Clients that support MCP Apps (for example ChatGPT, Claude and Mistral Vibe) show interactive cards: a small teas.co.uk
 website in the house style, with a menu, a back button, the Ask Lee chat, the basket and checkout. The Tea Guide tools draw one card in the teas.co.uk house style, with a menu, a back button and the Ask
